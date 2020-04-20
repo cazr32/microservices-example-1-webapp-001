@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps {
-                sh 'npm update'
+                sh 'npm install'
                 sh 'ng build --prod'
             }
             //post {
