@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps {
                 sh 'npm install'
-                sh 'ng build --prod'
+                sh 'ng build --configuration=production'
             }
             //post {
                 //success {
