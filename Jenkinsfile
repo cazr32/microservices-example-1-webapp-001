@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps {
                 sh 'npm install'
-                sh 'ng build --configuration=production'
+                sh 'ng build --configuration=production --base-href=/webapp1/'
             }
             //post {
                 //success {
